@@ -17,7 +17,7 @@ const Navbar = () => {
     <div>
         {user ? 
         <div className='flex items-center gap-2 sm:gap-3'>
-            <button onClick={()=>navigate('/buy')} className='flex items-center gap-2 sm:gap-3 bg-blue-100 px-4 sm:px-6 py-1.5 sm:py-3 rounded-full hover:scale-105 transition-all duration-700'>
+            <button onClick={()=>navigate('/buy')} className='flex items-center gap-2 sm:gap-3 bg-red-100 px-4 sm:px-6 py-1.5 sm:py-3 rounded-full hover:scale-105 transition-all duration-700'>
                 <img className='w-5' src={assets.credit_star} alt="" />
                 <p className='text-xs sm:text-sm font-medium text-gray-600'>Credits left: {credit}</p>
             </button>
@@ -35,8 +35,8 @@ const Navbar = () => {
         </div>
         :
         <div className='flex items-center gap-4 sm:gap-5'>
-            <p onClick ={()=>navigate('/buy')}className='cursor-pointer'>Pricing</p>
-            <button onClick={()=>setShowLogin(true)} className='bg-zinc-800 text-white px-7 py-2 sm:px-10 text-sm rounded-full cursor-pointer '>Login</button>
+            <p onClick ={()=>navigate('/buy')}className='cursor-pointer  hover:text-purple-800 transition-colors duration-300'>Pricing</p>
+            <button onClick={()=>setShowLogin(true)} className='bg-zinc-800 text-white px-7 py-2 sm:px-10 text-sm rounded-full cursor-pointer hover:scale-105 hover:shadow-lg transition-all duration-300 '>Login</button>
         </div>
   }
     </div>
